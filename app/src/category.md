@@ -1,5 +1,5 @@
 ---
-title: 'Articles of category'
+title: 'Articles of '
 layout: 'layouts/category.html'
 pagination: 
     data: categories

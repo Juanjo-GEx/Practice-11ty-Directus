@@ -2,8 +2,9 @@
 
 {% block content %}
 <section>
-    <h2>{{ title }} {{ category.name }}</h2>
-    {% include "partials/article-list.html" %}
+    <h2>{{ title }}</h2>
+    <h3>{{ article.title}}</h3>
+    <p>{{  article.Content }}</p>
     
 </section>
 {% endblock %}

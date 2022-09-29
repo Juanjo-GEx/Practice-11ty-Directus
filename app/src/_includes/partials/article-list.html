@@ -1,0 +1,13 @@
+{% if articles.length %} 
+<ul class="Articles">
+    {% for item in articles %}
+        {% for itemCategory in category.articles %}
+            {% if item.category == itemCategory %}
+            <li class="Articles-item"> 
+                <a href="/article/{{ item.title | slug }}/">{{ item.title }}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</ul>      
+{% endif %}

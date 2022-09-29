@@ -1,5 +1,7 @@
+const articleFilter = require('./src/filters/article-filter');
 module.exports = config => {
-    return {
+    config.addFilter('getArticlesByCategory', articleFilter);
+    return {        
         markdownTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',

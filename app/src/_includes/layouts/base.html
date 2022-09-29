@@ -2,12 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        {% include "css/style.css" %}
+    </style>   
 </head>
 <body>
     {% include "partials/header.html" %}
-    <main id="main-content">
+    <main class="Main">
         {% block content %}{% endblock %}
-    </main>    
+    </main> 
+    {% include "partials/footer.html" %}   
 </body>
 </html>

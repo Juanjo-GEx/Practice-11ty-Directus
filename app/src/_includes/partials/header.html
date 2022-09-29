@@ -1,14 +1,6 @@
-<header>    
-    <h2>LOGO</h2>    
-    {% if categories.length %}
-    <nav>
-        <ul>
-            {% for item in categories %}
-            <li>
-                <a href="/category/{{ item.name | slug }}/">{{ item.name }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-    </nav>
-    {% endif %}
+<header class="Header">    
+    <h2>
+        <a href="/">LOGO</a>
+    </h2>    
+    {% include "partials/category-nav.html" %}
 </header>

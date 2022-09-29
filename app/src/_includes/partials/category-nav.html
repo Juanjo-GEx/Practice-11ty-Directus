@@ -1,0 +1,11 @@
+{% if categories.length %}
+    <nav>
+        <ul class="Menu">
+            {% for item in categories %}
+            <li class="Menu-item">
+                <a href="/category/{{ item.name | slug }}/">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endif %}
